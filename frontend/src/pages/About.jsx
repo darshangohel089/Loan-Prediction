@@ -1,4 +1,4 @@
-import { Info, BookOpen, Code2, BrainCircuit, GraduationCap } from 'lucide-react'
+import { Info, Code2, BrainCircuit, GraduationCap } from 'lucide-react'
 
 const MODELS = [
   {
@@ -131,31 +131,6 @@ export default function About() {
               <li>• Axios + react-hot-toast</li>
             </ul>
           </div>
-        </div>
-      </Section>
-
-      {/* API docs link */}
-      <Section icon={BookOpen} title="API Documentation">
-        <p className="text-sm text-gray-600 mb-3">
-          The FastAPI backend automatically generates interactive API documentation.
-        </p>
-        <div className="flex gap-3">
-          <a href="http://localhost:8000/api/docs" target="_blank" rel="noopener noreferrer"
-             className="btn-primary text-sm py-2">
-            Swagger UI →
-          </a>
-          <a href="http://localhost:8000/api/redoc" target="_blank" rel="noopener noreferrer"
-             className="btn-secondary text-sm py-2">
-            ReDoc →
-          </a>
-        </div>
-        <div className="mt-4 bg-gray-900 rounded-lg p-4 text-xs font-mono text-green-400 overflow-x-auto">
-          <p className="text-gray-400 mb-2"># Key endpoints:</p>
-          <p>POST  /api/predict           # Single model prediction</p>
-          <p>POST  /api/predict/all       # All models comparison</p>
-          <p>GET   /api/models            # Model metrics</p>
-          <p>GET   /api/history           # Prediction history</p>
-          <p>DELETE /api/history/{'{id}'}       # Delete record</p>
         </div>
       </Section>
     </div>
